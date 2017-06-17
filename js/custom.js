@@ -2,8 +2,8 @@
 (function ($) {
 "use strict";
 
-// var mapLoaded = false,
-//     map;
+ var mapLoaded = false,
+     map;
 /*---------------Google Maps Scripts-------------------------*/
 // function initMap() {
 //     var mapStyle = [
