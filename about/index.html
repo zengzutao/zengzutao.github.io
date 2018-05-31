@@ -42,7 +42,7 @@
         <div id="header-menu" class="header-menu-pos animated">
             <div class="header-menu-container">
                 <a href="/" class="left">
-                    <span class="site-title">个人博客</span>
+                    <span class="site-title">Jack&#39;s Blog</span>
                 </a>
                 <nav id="header-menu-nav" class="right">
                     
@@ -77,7 +77,7 @@
                 <div id="header-title">
                     
                     <h2>
-                        个人博客
+                        Jack&#39;s Blog
                     </h2>
                     
                 </div>
@@ -250,6 +250,21 @@
 
 
     
+        <link rel="stylesheet" href="//unpkg.com/gitment/style/default.css">
+    <script src="//unpkg.com/gitment/dist/gitment.browser.js"></script>
+    <script>
+        var gitment = new Gitment({
+            owner: 'zengzutao',
+            repo: '',
+            oauth: {
+                client_id: '',
+                client_secret: '',
+            },
+        })
+        gitment.render('comments')
+    </script>
+
+    
 </section>
         
       </div>
@@ -257,6 +272,15 @@
   <div class="outer">
     <div id="footer-info" class="inner">
       
+<p>
+    <span id="busuanzi_container_site_uv" style='display:none'>
+        总访客数：<span id="busuanzi_value_site_uv"></span>
+    </span>
+    <span id="busuanzi_container_site_pv" style='display:none'>
+        总访问量：<span id="busuanzi_value_site_pv"></span>
+    </span>
+</p>
+
 
       <p>
         Powered by  <a href="http://hexo.io/" target="_blank">Hexo</a>
