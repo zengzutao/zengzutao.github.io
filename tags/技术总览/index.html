@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   
-  <title>个人博客</title>
+  <title>Tag: 技术总览 | 个人博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   
     <meta name="keywords" content="个人博客 曾祖涛" />
@@ -12,7 +12,7 @@
 <meta name="keywords" content="曾祖涛">
 <meta property="og:type" content="website">
 <meta property="og:title" content="个人博客">
-<meta property="og:url" content="http://www.zengzutao.com/index.html">
+<meta property="og:url" content="http://www.zengzutao.com/tags/技术总览/index.html">
 <meta property="og:site_name" content="个人博客">
 <meta property="og:description" content="个人博客">
 <meta property="og:locale" content="default">
@@ -105,100 +105,33 @@
       <div class="outer">
         <section id="main" class="body-wrap">
   
-    <article id="post-hexo" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-inner">
+  
     
-      <header class="article-header">
-        
+    
+      
+      
+      <section class="archives-wrap">
+        <div class="archive-year-wrap">
+          <a href="/archives/2015" class="archive-year">2015</a>
+        </div>
+        <div class="archives">
+    
+    <article class="archive-article archive-type-post">
+  <div class="archive-article-inner">
+    <header class="archive-article-header">
+      <a href="/2015/05/30/index/" class="archive-article-date">
+  <time datetime="2015-05-29T16:00:00.000Z" itemprop="datePublished">05-30</time>
+</a>
+      
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2018/05/30/hexo/"  >Hexo 初始化</a>
+      <a class="archive-article-title" href="/2015/05/30/index/"  >博客总览</a>
     </h1>
   
 
-          
-      </header>
-    
-    <div class="article-entry " itemprop="articleBody">
+    </header>
       
-        <div class="article-img">
-            <a href="/2018/05/30/hexo/" >
-                
-                <img src="http://www.zengzutao.com/images/banner.jpg" alt="Hexo 初始化" title="Hexo 初始化">
-                
-            </a>
-        </div>
-        <div class="article-feed">
-            <p>
-                Welcome to Hexo! This is your very first post.
-Quick StartCreate a new post1$ hexo new "My New Po...
-            </p>
-        </div>
-      
-        
-    </div>
-    <footer class="article-footer">
-        
-        <ul class="article-footer-menu">
-            
-                <li><i class="fa fa-calendar"></i>2018-05-30</li>
-            
-            
-        </ul>
-        
-            <a href="/2018/05/30/hexo/#more" class="article-more-link" >more&gt;&gt;</a>
-        
-    </footer>
-  </div>
-</article>
-
-
-  
-    <article id="post-index" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2015/05/30/index/"  >博客总览</a>
-    </h1>
-  
-
-          
-              <span class="header-cate">
-                <i class="fa fa-map-marker"></i>
-                  
-                  <a href="/categories/技术总览/">技术总览</a>
-                  
-              </span>
-          
-      </header>
-    
-    <div class="article-entry " itemprop="articleBody">
-      
-        <div class="article-img">
-            <a href="/2015/05/30/index/" >
-                
-                <img src="http://oerolc7og.bkt.clouddn.com/images/miho/theme/github-second.jpg" alt="博客总览" title="博客总览">
-                
-            </a>
-        </div>
-        <div class="article-feed">
-            <p>
-                欢迎来到我的博客，博客主要用于记录工作或学习中学习到新技术、新思想，并且都是一些我个人技术点;供大家参考;
-技术点JavaScript And NodeJs12345ECMAScript5、EC...
-            </p>
-        </div>
-      
-        
-    </div>
-    <footer class="article-footer">
-        
-        <ul class="article-footer-menu">
-            
-                <li><i class="fa fa-calendar"></i>2015-05-30</li>
-            
+        <div class="archive-post-footer">
             
   <li class="article-footer-tags">
     <i class="fa fa-tags"></i>
@@ -209,15 +142,14 @@ Quick StartCreate a new post1$ hexo new "My New Po...
       
   </li>
 
-        </ul>
-        
-            <a href="/2015/05/30/index/#more" class="article-more-link" >more&gt;&gt;</a>
-        
-    </footer>
+        </div>
+      
   </div>
 </article>
 
-
+  
+  
+    </div></section>
   
 
 </section>
@@ -251,7 +183,7 @@ Quick StartCreate a new post1$ hexo new "My New Po...
   var mihoConfig = {
       root: "http://www.zengzutao.com",
       animate: true,
-      isHome: true,
+      isHome: false,
       share: true,
       reward: 1
   }
@@ -353,6 +285,11 @@ Quick StartCreate a new post1$ hexo new "My New Po...
   <script src="//cdn.bootcss.com/scrollReveal.js/3.0.5/scrollreveal.js"></script>
   <script src="/js/animate.js"></script>
 
+
+  <script src="/js/pop-img.js"></script>
+  <script>
+     $(".article-entry p img").popImg();
+  </script>
 
   </div>
 </body>
