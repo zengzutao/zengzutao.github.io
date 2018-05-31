@@ -16,7 +16,7 @@
 <meta property="og:site_name" content="个人博客">
 <meta property="og:description" content="路漫漫其修远兮，吾将上下而求索。 —屈原 环境搭建NVM安装及Node安装源配置（使用国内镜像）12345下载NVM并安装，NVM下载地址：https://github.com/coreybutler/nvm-windows/releases配置node安装源：nvm node_mirror https://npm.taobao.org/mirrors/node/配置npm安装源：nvm npm_">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-05-31T06:58:22.847Z">
+<meta property="og:updated_time" content="2018-05-31T07:00:53.883Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo环境搭建及文章置顶">
 <meta name="twitter:description" content="路漫漫其修远兮，吾将上下而求索。 —屈原 环境搭建NVM安装及Node安装源配置（使用国内镜像）12345下载NVM并安装，NVM下载地址：https://github.com/coreybutler/nvm-windows/releases配置node安装源：nvm node_mirror https://npm.taobao.org/mirrors/node/配置npm安装源：nvm npm_">
@@ -98,6 +98,9 @@
                         <a title="Github" target="_blank" href="//github.com/zengzutao">
                             <i class="fa fa-github fa-2x"></i></a>
                     
+                        <a title="Weibo" target="_blank" href="//www.zengzutao.com/resume/index">
+                            <i class="fa fa-weibo fa-2x"></i></a>
+                    
                 </div>
             </nav>
         </div>
@@ -149,7 +152,7 @@
 <h2 id="文章置顶"><a href="#文章置顶" class="headerlink" title="文章置顶"></a>文章置顶</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">找到该文件：generator.js(node_modules/hexo-generator-index/lib/generator.js)</span><br><span class="line">在generator.js中添加如下代码：</span><br><span class="line">posts.data = posts.data.sort(<span class="keyword">function</span>(first, second) &#123;</span><br><span class="line">    <span class="keyword">if</span> (first.top &amp;&amp; second.top) &#123; // 两篇文章top都有定义</span><br><span class="line">        <span class="built_in">return</span> first.top == second.top ? second.date - first.date : second.top - first.top //若top值一样则按照文章日期降序排, 否则按照top值降序排</span><br><span class="line">    &#125; <span class="keyword">else</span> <span class="keyword">if</span> (first.top &amp;&amp; !second.top) &#123; // 以下是只有一篇文章top有定义，将有top的排在前面</span><br><span class="line">        <span class="built_in">return</span> -1;</span><br><span class="line">    &#125; <span class="keyword">else</span> <span class="keyword">if</span> (!first.top &amp;&amp; second.top) &#123;</span><br><span class="line">        <span class="built_in">return</span> 1;</span><br><span class="line">    &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">        <span class="built_in">return</span> second.date - first.date;  // 都没定义top，按照文章日期降序排</span><br><span class="line">    &#125;</span><br><span class="line">&#125;);</span><br><span class="line">在文章头部加入 top: 数字；值越大，文章越靠前;</span><br></pre></td></tr></table></figure>
             <div class="post-copyright">
     <div class="content">
-        <p>最后更新： 2018年05月31日 14:58</p>
+        <p>最后更新： 2018年05月31日 15:00</p>
         <p>原始链接： <a class="post-url" href="/2018/05/30/hexo/" title="Hexo环境搭建及文章置顶">http://www.zengzutao.com/2018/05/30/hexo/</a></p>
         <footer>
             <a href="http://www.zengzutao.com">
