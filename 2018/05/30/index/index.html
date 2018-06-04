@@ -8,18 +8,18 @@
   
     <meta name="keywords" content="个人博客 曾祖涛" />
   
-  <meta name="description" content="雄关漫道真如铁，而今迈步从头越。—毛泽东 Service Worker一、定义1.Chrome 团队提出和力推的一个 WEB API。2.用于给 web 应用提供高级的可持续的后台处理能力。 二、特点1.本质上充当Web应用程序与浏览器之间的代理服务器。2.能够创建有效的离线体验。3.只能使用HTTPS，拦截网络请求。4.允许访问推送通知和后台同步API。5.不能操作页面 DOM,但可以通过事件机">
+  <meta name="description" content="雄关漫道真如铁，而今迈步从头越。 —毛泽东  Service Worker一、定义1.Chrome 团队提出和力推的一个 WEB API。2.用于给 web 应用提供高级的可持续的后台处理能力。 二、特点1.本质上充当Web应用程序与浏览器之间的代理服务器。2.能够创建有效的离线体验。3.只能使用HTTPS，拦截网络请求。4.允许访问推送通知和后台同步API。5.不能操作页面 DOM,但可以通过">
 <meta name="keywords" content="ServiceWorker,PWA">
 <meta property="og:type" content="article">
 <meta property="og:title" content="PWA 和 ServiceWorker">
 <meta property="og:url" content="http://blog.zengzutao.com/2018/05/30/index/index.html">
 <meta property="og:site_name" content="个人博客">
-<meta property="og:description" content="雄关漫道真如铁，而今迈步从头越。—毛泽东 Service Worker一、定义1.Chrome 团队提出和力推的一个 WEB API。2.用于给 web 应用提供高级的可持续的后台处理能力。 二、特点1.本质上充当Web应用程序与浏览器之间的代理服务器。2.能够创建有效的离线体验。3.只能使用HTTPS，拦截网络请求。4.允许访问推送通知和后台同步API。5.不能操作页面 DOM,但可以通过事件机">
+<meta property="og:description" content="雄关漫道真如铁，而今迈步从头越。 —毛泽东  Service Worker一、定义1.Chrome 团队提出和力推的一个 WEB API。2.用于给 web 应用提供高级的可持续的后台处理能力。 二、特点1.本质上充当Web应用程序与浏览器之间的代理服务器。2.能够创建有效的离线体验。3.只能使用HTTPS，拦截网络请求。4.允许访问推送通知和后台同步API。5.不能操作页面 DOM,但可以通过">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-05-31T10:53:01.149Z">
+<meta property="og:updated_time" content="2018-06-04T10:58:07.449Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="PWA 和 ServiceWorker">
-<meta name="twitter:description" content="雄关漫道真如铁，而今迈步从头越。—毛泽东 Service Worker一、定义1.Chrome 团队提出和力推的一个 WEB API。2.用于给 web 应用提供高级的可持续的后台处理能力。 二、特点1.本质上充当Web应用程序与浏览器之间的代理服务器。2.能够创建有效的离线体验。3.只能使用HTTPS，拦截网络请求。4.允许访问推送通知和后台同步API。5.不能操作页面 DOM,但可以通过事件机">
+<meta name="twitter:description" content="雄关漫道真如铁，而今迈步从头越。 —毛泽东  Service Worker一、定义1.Chrome 团队提出和力推的一个 WEB API。2.用于给 web 应用提供高级的可持续的后台处理能力。 二、特点1.本质上充当Web应用程序与浏览器之间的代理服务器。2.能够创建有效的离线体验。3.只能使用HTTPS，拦截网络请求。4.允许访问推送通知和后台同步API。5.不能操作页面 DOM,但可以通过">
   
   
     <link rel="icon" href="/favicon.ico">
@@ -143,7 +143,9 @@
     <div class="article-entry post-content" itemprop="articleBody">
       
             
-            <p>雄关漫道真如铁，而今迈步从头越。—毛泽东</p>
+            <blockquote>
+<p><em><strong>雄关漫道真如铁，而今迈步从头越。</strong></em> —毛泽东</p>
+</blockquote>
 <h2 id="Service-Worker"><a href="#Service-Worker" class="headerlink" title="Service Worker"></a>Service Worker</h2><h3 id="一、定义"><a href="#一、定义" class="headerlink" title="一、定义"></a>一、定义</h3><p>1.Chrome 团队提出和力推的一个 WEB API。<br>2.用于给 web 应用提供高级的可持续的后台处理能力。</p>
 <h3 id="二、特点"><a href="#二、特点" class="headerlink" title="二、特点"></a>二、特点</h3><p>1.本质上充当Web应用程序与浏览器之间的代理服务器。<br>2.能够创建有效的离线体验。<br>3.只能使用HTTPS，拦截网络请求。<br>4.允许访问推送通知和后台同步API。<br>5.不能操作页面 DOM,但可以通过事件机制来处理。<br>6.结合 Fetch、Cache、Push、postMessage 和 Notification等API的能力</p>
 <h3 id="三、功能"><a href="#三、功能" class="headerlink" title="三、功能"></a>三、功能</h3><p>1.离线缓存。<br>2.消息推送。<br>3.静默更新。</p>
@@ -160,7 +162,7 @@
 
             <div class="post-copyright">
     <div class="content">
-        <p>最后更新： 2018年05月31日 18:53</p>
+        <p>最后更新： 2018年06月04日 18:58</p>
         <p>原始链接： <a class="post-url" href="/2018/05/30/index/" title="PWA 和 ServiceWorker">http://blog.zengzutao.com/2018/05/30/index/</a></p>
         <footer>
             <a href="http://blog.zengzutao.com">
